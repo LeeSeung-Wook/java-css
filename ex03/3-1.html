@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background-color: #fafafc;
+      }
+      .all_box {
+        display: grid;
+        justify-content: center;
+      }
+
+      main {
+        width: 1000px;
+      }
+      .menu_box {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        column-gap: 30px;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: 1px solid rgba(170, 170, 170, 0.301);
+        box-shadow: 1px 1px 1px 1px rgba(170, 170, 170, 0.301);
+      }
+
+      .icon_box {
+        display: grid;
+        justify-content: center;
+      }
+
+      .menu_title {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .feature_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+      }
+      .list_box {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .sub_title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .feature_item {
+        height: 110px;
+      }
+
+      .feature_item > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mv20 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .mv10 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .mv5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all_box">
+      <main>
+        <header>
+          <div class="title">Add meals</div>
+          <div class="menu_box">
+            <div class="menu_item">
+              <div class="icon_box">
+                <div class="icon">🥪</div>
+              </div>
+              <div class="menu_title">All</div>
+            </div>
+            <div class="menu_item">
+              <div class="icon_box">
+                <div class="icon">🍕</div>
+              </div>
+              <div class="menu_title">Pizza</div>
+            </div>
+            <div class="menu_item">
+              <div class="icon_box">
+                <div class="icon">🥩</div>
+              </div>
+              <div class="menu_title">Meat</div>
+            </div>
+            <div class="menu_item">
+              <div class="icon_box">
+                <div class="icon">🥗</div>
+              </div>
+              <div class="menu_title">Veggies</div>
+            </div>
+          </div>
+        </header>
+        <section>
+          <div>
+            <hr />
+          </div>
+          <div class="sub_title">Featured meals</div>
+          <div class="feature_box">
+            <div class="feature_item">
+              <img src="./meal1.png" />
+            </div>
+            <div class="feature_item">
+              <img src="./meal2.png" />
+            </div>
+            <div class="feature_item">
+              <img src="./meal3.png" />
+            </div>
+            <div class="feature_item">
+              <img src="./meal4.png" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <hr />
+          </div>
+          <div class="list_box">
+            <div>Pasta Carbonara</div>
+            <div>
+              <button>➕</button>
+            </div>
+          </div>
+          <div class="list_box">
+            <div>Lasagna</div>
+            <div>
+              <button>➕</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

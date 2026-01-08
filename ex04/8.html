@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      /* 깊이 1 */
+      .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        display: inline-block;
+      }
+
+      /* 깊이 1 */
+      .box2 {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        display: inline-block;
+      }
+
+      /* 깊이 1 */
+      .box3 {
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        display: inline-block;
+      }
+
+      /* 깊이 2 */
+      .box4 {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        display: inline-block;
+        position: absolute;
+        z-index: 99;
+      }
+
+      /* 깊이 1 */
+      .box5 {
+        width: 300px;
+        height: 300px;
+        background-color: bisque;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>z-index는 position이 static이 아닌애들로만 작동한다</h1>
+    <hr />
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+  </body>
+</html>
